@@ -379,3 +379,26 @@ body{
 .footer-section h3{
     color: teal;
 }
+.btnprev{
+    margin-left: 6%;
+}
+
+.btnnxt{
+    float: right;
+    margin-right: 6%;
+}
+.btn{
+    width: 80px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    background: #888;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: #d3d3d3;
+    color: pointer;
+}
+.btn:hover{
+    background-color: #000;
+    cursor: pointer;
+}
