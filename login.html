@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form action="registration" method="POST" name="registration" class="registration-form">
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Last name">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm password">
+                <input type="tel" placeholder="Phone number">
+                <input type="email" placeholder="Email">
+                <button>Register</button>
+                <p class="message">Already registerd? <a href="#">Login</a></p>
+            </form>
+            <form action="login" method="POST" class="login-form">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Login</button>
+                <p class="message">Not registerd? <a href="#">Register</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+    <script>
+        //jquery code to toggle between login and registration
+        $('.message a').click(function(){
+            $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+        });
+    </script>
+</body>
+</html>

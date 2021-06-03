@@ -366,7 +366,31 @@ body{
 .search-box:hover > .search-btn{
     background: white;
 }
+.carousel-container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-slide img{
+    width: 100%;
+    height: 800px;
+}
 
+.carousel-container .carousel-slide,
+.carousel-container .hidden{
+    display: none;
+}
+
+.carousel-container .carousel-slide img{
+    width: 100%;
+    height: auto;
+}
+
+.carousel-container .visible{
+    display: block;
+}
+/*
 .my-image img{
     height: 800px;
     width: 90%;
@@ -375,7 +399,7 @@ body{
     display: flex;
     justify-content: center;
     margin: 10px;
-}
+}*/
 .footer-section h3{
     color: teal;
 }

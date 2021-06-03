@@ -31,7 +31,7 @@
                 </a></li>
                 <li><a href="about.html" target="_blank"><i class="fa fa-info-circle" aria-hidden="true"></i>About</a>
                 </li>
-                <li><a href="registration.html" target="_blank"><i class="fa fa-phone-square"
+                <li><a href="login.html" target="_blank"><i class="fa fa-phone-square"
                             aria-hidden="true"></i>Login</a></li>
                 <li><a href="registration.html" target="_blank"><i class="fa fa-shopping-cart"
                             aria-hidden="true"></i>Shopping Cart</a></li>
@@ -47,12 +47,20 @@
             <img src="cover.jpeg" alt="">
         </div>
     </div>
-    <div class="my-image">
-        <img src="images/car.jpg" alt="" class="disp-image">
+    <div class="carousel-container">
+        <div class="carousel-slide visible">
+            <img src="images/car.jpg" alt="">
+        </div>
+        <div class="carousel-slide hidden">
+            <img src="images/phone.jpg" alt="">
+        </div>
+        <div class="carousel-slide hidden">
+            <img src="images/tv.jpg" alt="">
+        </div>
     </div>
     <!--Next & Previous buttons-->
-    <button class=" btn btnprev" onclick="prev()">Prev</button>
-    <button class=" btn btnnxt" onclick="next()">Next</button>
+    <button class=" btn btnprev" id="prevbtn">Prev</button>
+    <button class=" btn btnnxt" id="nxtbtn">Next</button>
     <div id="contact">
         <form>
 
@@ -87,6 +95,7 @@
             &copy 2021; JB Auction platform | Designed by Norbert Guda - 0713627939 - Email:norbertguda@gmail.com
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
