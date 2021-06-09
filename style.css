@@ -426,3 +426,16 @@ body{
     background-color: #000;
     cursor: pointer;
 }
+
+/* to change the background of the container class on hover*/
+#container li:hover{
+    background-color: #000;
+    transition: background 1s ease-in;
+}
+#container a:hover{
+    color: whitesmoke;
+}
+
+#container li{
+    padding: 3px;
+}
