@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
+
 <body>
     <div class="login-page">
         <div class="form">
@@ -23,18 +26,33 @@
             <form action="login" method="POST" class="login-form">
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Password">
-                <button>Login</button>
+
                 <p class="message">Not registerd? <a href="#">Register</a></p>
             </form>
+            <button id="login">Login</button>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js">
     </script>
     <script>
         //jquery code to toggle between login and registration
-        $('.message a').click(function(){
-            $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+        $('.message a').click(function () {
+            $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+
+            $('#login').click(() => {
+                $.ajax({
+                    url: '/auth',
+                    type: 'GET',
+                    dataType: 'application/json',
+                    success: (data) => {
+                        console.log("successful")
+                    }
+
+                });
+
+            });
         });
     </script>
 </body>
+
 </html>

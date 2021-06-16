@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Auction page</title>
+</head>
+
+<body>
+    <div class="auction-header">
+        <h1>JB AUCTION <br></h1>
+        <p><em>Auction your item from anywhere, anytime</em></p>
+    </div>
+    <div class="drop-down">
+        <nav>
+            <label for="" class="drop-down-button">Item Category</label>
+            <span class="fa fa-caret-down"></span>
+        </nav>
+    </div>
+    <div class="dropdown-list">
+        <div class="dropdown-list-item">Electronics</div>
+        <div class="dropdown-list-item">Furnitures</div>
+        <div class="dropdown-list-item">Motors</div>
+        <div class="dropdown-list-item">House hold items</div>
+    </div>
+    <div class="item-details">
+        <input type="text" placeholder="Item name"> <br>
+        <input type="text" placeholder="Min price"> <br>
+        <button>Start time</button>
+        <button>End time</button>
+    </div>
+    <div class="image-upload">
+        <input type="file" id="real-file" hidden="hidden">
+        <button type="button" id="custom-button">UPLOAD IMAGE</button>
+        <span id="custom-text">No file chosen, yet</span>
+    </div>
+    <div class="video-upload">
+        <button type="button" >UPLOAD VIDEO</button>
+        <span>Upload short video to describe major functionalities</span>
+    </div>
+    <div>
+        <button>SEND</button>
+        <button>CANCEL</button>
+    </div>
+
+    <script>
+        const realFileBtn = document.getElementById("real-file");
+        const customButton = document.getElementById("custom-button");
+        const customText = document.getElementById("custom-text");
+
+        customButton.addEventListener("click", () => {
+            console.log("clicked")
+            realFileBtn.click();
+        })
+    </script>
+</body>
+
+</html>
