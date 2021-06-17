@@ -13,23 +13,27 @@
 <body>
     <div class="login-page">
         <div class="form">
-            <form action="registration" method="POST" name="registration" class="registration-form">
-                <input type="text" placeholder="First name">
-                <input type="text" placeholder="Last name">
-                <input type="password" placeholder="Password">
-                <input type="password" placeholder="Confirm password">
-                <input type="tel" placeholder="Phone number">
-                <input type="email" placeholder="Email">
-                <button>Register</button>
+            
+            <form action="/registration" method="POST"  class="registration-form">
+                <input type="text"  name="fname" placeholder="First name">
+                <input type="text" name="lname" placeholder="Last name">
+                <input type="password" name="pass" placeholder="Password">
+                <input type="password" name="cpass" placeholder="Confirm password">
+                <input type="tel" name="phone" placeholder="Phone number">
+                <input type="email" name="email" placeholder="Email">
+                <button value="submit">Register</button>
                 <p class="message">Already registerd? <a href="#">Login</a></p>
             </form>
-            <form action="login" method="POST" class="login-form">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+
+            <form action="/logindetails" method="POST" class="login-form">
+                <input type="text" name="username" placeholder="username">
+                <input type="password" name="pass" placeholder="Password">
 
                 <p class="message">Not registerd? <a href="#">Register</a></p>
+
+                <input type="submit">Login</input>
+
             </form>
-            <button id="login">Login</button>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js">

@@ -434,6 +434,8 @@ body{
 #container li:hover{
     background-color: #000;
     transition: background 1s ease-in;
+    font-weight: bold;
+    cursor: pointer;
 }
 #container a:hover{
     color: whitesmoke;
@@ -515,4 +517,8 @@ nav span{
 .drop-down:hover .dropdown-list{
     opacity: 1;
     visibility: visible;
+}
+.slideImage{
+    max-width: 100%;
+    max-height: 600px;
 }
